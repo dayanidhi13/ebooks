@@ -17,6 +17,7 @@ router.get('/', async (req, res) => {
             },
         });
 
+
         const data = response.data.items || [];
         let authorCount = {};
         let earliest = '9999';
@@ -25,7 +26,9 @@ router.get('/', async (req, res) => {
         const books = data.map((item) => {
             const info = item.volumeInfo;
             const authors = info.authors || ['Unknown Author'];
-            const publishedDate = info.publishedDate || '0000';
+            git add .
+
+                const publishedDate = info.publishedDate || '0000';
 
             authors.forEach((a) => {
                 authorCount[a] = (authorCount[a] || 0) + 1;

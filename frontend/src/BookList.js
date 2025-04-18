@@ -16,10 +16,11 @@ const BookList = ({ books }) => {
                     subtitle = '',
                     description = 'No description available.',
                     publisher = 'N/A',
+
                     publishedDate = 'N/A',
                     pageCount = 'N/A',
                     previewLink = '#',
-                    thumbnail = '' // NEW: receive thumbnail here
+                    thumbnail = ''
                 } = book;
 
                 return (
